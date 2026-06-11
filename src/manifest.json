@@ -19,9 +19,14 @@
   "permissions": [
     "storage"
   ],
-    "browser_specific_settings": {
+  "browser_specific_settings": {
     "gecko": {
-      "id": "setlist-manager@TheSpeakers.local"
+      "id": "setlistmanager@musique.local",
+      "data_collection_permissions": {
+        "required": [
+          "policy"
+        ]
+      }
     }
   }
 }
