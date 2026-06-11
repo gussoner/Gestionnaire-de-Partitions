@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Gestionnaire de Partitions & Setlists",
+  "version": "1.0",
+  "description": "Organisez vos partitions PDF et lancez vos setlists en plein écran.",
+"icons": {
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "Ouvrir le Gestionnaire de Partitions",
+    "default_icon": {
+      "48": "icons/icon-48.png"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "storage"
+  ],
+    "browser_specific_settings": {
+    "gecko": {
+      "id": "setlist-manager@TheSpeakers.local"
+    }
+  }
+}
