@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Setlist & Partitions</title>
+    <title data-i18n="app_title">Setlist & Partitions</title>
     <script src="tailwindcss.js"></script>
     <style>
         .dragging { opacity: 0.5; }
@@ -15,19 +15,19 @@
 
     <div id="step-1" class="container mx-auto p-6 max-w-4xl">
         <h1 class="text-3xl font-bold mb-6 text-emerald-400 flex items-center gap-2">
-            🎸 Gestionnaire de Partitions
+            🎸 <span data-i18n="main_title">Gestionnaire de Partitions</span>
         </h1>
 
         <div id="saved-playlists-section" class="mb-8 bg-gray-800 p-4 rounded-lg hidden">
-            <h2 class="text-xl font-semibold mb-3 text-gray-300">Playlists sauvegardées</h2>
+            <h2 class="text-xl font-semibold mb-3 text-gray-300" data-i18n="saved_playlists">Playlists sauvegardées</h2>
             <div id="playlists-list" class="flex flex-wrap gap-3"></div>
         </div>
 
         <div id="folder-picker-zone" class="bg-gray-800 p-6 rounded-lg border border-gray-700 mb-6 text-center">
-            <p class="mb-4 text-gray-400">Sélectionnez le dossier de votre groupe pour charger ou mettre à jour les fichiers.</p>
+            <p class="mb-4 text-gray-400" data-i18n="folder_picker_instructions">Sélectionnez le dossier de votre groupe pour charger ou mettre à jour les fichiers.</p>
             <input type="file" id="folder-picker" webkitdirectory directory multiple class="hidden">
             <button id="btn-select-folder" class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-3 px-6 rounded-lg transition shadow-lg inline-flex items-center gap-2">
-                📁 Sélectionner le dossier du groupe
+                📁 <span data-i18n="btn_select_folder">Sélectionner le dossier du groupe</span>
             </button>
             <p id="file-count" class="text-sm text-gray-400 mt-3"></p>
         </div>
@@ -35,18 +35,18 @@
         <div id="pdf-list-container" class="hidden bg-gray-800 p-6 rounded-lg border border-gray-700">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
                 <div class="flex items-center gap-3">
-                    <h2 class="text-xl font-semibold">Partitions trouvées</h2>
-                    <button id="btn-toggle-all" class="text-xs bg-gray-700 hover:bg-gray-600 px-2.5 py-1 rounded text-gray-300 transition">
+                    <h2 class="text-xl font-semibold" data-i18n="pdf_found_title">Partitions trouvées</h2>
+                    <button id="btn-toggle-all" class="text-xs bg-gray-700 hover:bg-gray-600 px-2.5 py-1 rounded text-gray-300 transition" data-i18n="btn_select_all">
                         Tout sélectionner
                     </button>
                 </div>
-                <button id="btn-to-step-2" class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2 px-4 rounded transition" disabled>
+                <button id="btn-to-step-2" class="bg-blue-600 hover:bg-blue-500 text-white font-medium py-2 px-4 rounded transition" disabled data-i18n="btn_next_step">
                     Suivant (Organiser) ->
                 </button>
             </div>
 
             <div class="relative mb-4">
-                <input type="text" id="search-filter" placeholder="Rechercher un morceau ou un dossier..." class="w-full bg-gray-700 border border-gray-600 rounded-lg pl-4 pr-10 py-2.5 text-white placeholder-gray-400 focus:outline-none focus:border-emerald-500 transition text-sm">
+                <input type="text" id="search-filter" placeholder="Rechercher un morceau ou un dossier..." data-i18n-placeholder="search_placeholder" class="w-full bg-gray-700 border border-gray-600 rounded-lg pl-4 pr-10 py-2.5 text-white placeholder-gray-400 focus:outline-none focus:border-emerald-500 transition text-sm">
                 <button id="btn-clear-search" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white hidden text-lg font-bold" title="Vider la recherche">✕</button>
             </div>
 
@@ -56,20 +56,20 @@
 
     <div id="step-2" class="container mx-auto p-6 max-w-2xl hidden">
         <div class="flex justify-between items-center mb-2">
-            <h1 class="text-3xl font-bold text-emerald-400">📋 Organiser la Setlist</h1>
+            <h1 class="text-3xl font-bold text-emerald-400" data-i18n="organize_title">📋 Organiser la Setlist</h1>
             <button id="btn-add-songs" class="bg-gray-700 hover:bg-gray-600 text-emerald-400 hover:text-emerald-300 text-sm font-medium py-2 px-4 rounded-lg border border-gray-600 transition flex items-center gap-1">
-                ➕ Ajouter des morceaux
+                ➕ <span data-i18n="btn_add_songs">Ajouter des morceaux</span>
             </button>
         </div>
-        <p class="text-gray-400 mb-6">Glissez-déposez pour changer l'ordre. Utilisez 🗑️ pour retirer un morceau.</p>
+        <p class="text-gray-400 mb-6" data-i18n="organize_instructions">Glissez-déposez pour changer l'ordre. Utilisez 🗑️ pour retirer un morceau.</p>
 
         <div id="sortable-list" class="space-y-2 mb-6"></div>
 
         <div class="flex justify-between bg-gray-800 p-4 rounded-lg">
-            <button id="btn-back-to-step1" class="text-gray-400 hover:text-white py-2 px-4"><- Retour</button>
+            <button id="btn-back-to-step1" class="text-gray-400 hover:text-white py-2 px-4" data-i18n="btn_back"><- Retour</button>
             <div class="flex gap-2">
-                <input type="text" id="playlist-name" placeholder="Nom de la playlist" class="bg-gray-700 border border-gray-600 rounded px-3 py-2 text-white focus:outline-none focus:border-emerald-500">
-                <button id="btn-launch-playlist" class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-2 px-6 rounded transition">🚀 Lancer la Playlist</button>
+                <input type="text" id="playlist-name" placeholder="Nom de la playlist" data-i18n-placeholder="playlist_name_placeholder" class="bg-gray-700 border border-gray-600 rounded px-3 py-2 text-white focus:outline-none focus:border-emerald-500">
+                <button id="btn-launch-playlist" class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-2 px-6 rounded transition" data-i18n="btn_launch">🚀 Lancer la Playlist</button>
             </div>
         </div>
     </div>
@@ -77,7 +77,7 @@
     <div id="step-3" class="fixed inset-0 bg-black hidden z-50 flex">
         <div id="sidebar-index" class="fixed inset-y-0 left-0 w-80 bg-gray-950/95 border-r border-gray-800 p-6 transform -translate-x-full transition-transform duration-300 z-50 overflow-y-auto shadow-2xl">
             <div class="flex justify-between items-center mb-6">
-                <h3 class="text-xl font-bold text-emerald-400">Index de la Setlist</h3>
+                <h3 class="text-xl font-bold text-emerald-400" data-i18n="sidebar_title">Index de la Setlist</h3>
                 <button id="btn-close-sidebar" class="text-gray-400 hover:text-white text-xl">✕</button>
             </div>
             <div id="sidebar-tracks-list" class="space-y-2"></div>
@@ -91,25 +91,30 @@
 
         <div id="viewer-controls" class="w-48 h-full bg-gray-950/95 border-l border-gray-800 flex flex-col items-center py-6 px-4 gap-6 shadow-2xl z-50 transition-all duration-200 justify-between select-none shrink-0">
             <div class="w-full flex flex-col items-center gap-4">
-                <button id="btn-minimize" class="text-gray-400 hover:text-white text-xs bg-gray-800 hover:bg-gray-700 py-1.5 px-3 rounded-full flex items-center gap-1 transition">Masquer ➡️</button>
+                <button id="btn-minimize" class="text-gray-400 hover:text-white text-xs bg-gray-800 hover:bg-gray-700 py-1.5 px-3 rounded-full flex items-center gap-1 transition"><span data-i18n="btn_minimize">Masquer</span> ➡️</button>
                 <div class="w-full text-center border-b border-gray-800 pb-3">
                     <span id="current-song-title" class="text-xs font-semibold text-emerald-400 block break-words max-w-full px-1"></span>
                 </div>
             </div>
 
             <div class="w-full flex flex-col gap-3">
-                <button id="btn-open-sidebar" class="w-full bg-emerald-700 hover:bg-emerald-600 text-white font-medium py-2.5 px-4 rounded-lg text-sm transition flex items-center justify-center gap-2 shadow">📋 Index</button>
+                <button id="btn-open-sidebar" class="w-full bg-emerald-700 hover:bg-emerald-600 text-white font-medium py-2.5 px-4 rounded-lg text-sm transition flex items-center justify-center gap-2 shadow">📋 <span data-i18n="btn_index">Index</span></button>
                 <div class="h-px bg-gray-800 my-2"></div>
-                <button id="btn-prev-song" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-medium py-3 px-4 rounded-lg text-sm transition flex items-center justify-center gap-1">⏮️ Précédent</button>
-                <button id="btn-next-song" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-medium py-3 px-4 rounded-lg text-sm transition flex items-center justify-center gap-1">Suivant ⏭️</button>
+                <button id="btn-prev-song" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-medium py-3 px-4 rounded-lg text-sm transition flex items-center justify-center gap-1">
+					⏮️ <span data-i18n="btn_prev">Précédent</span>
+				</button>
+				<button id="btn-next-song" class="w-full bg-gray-800 hover:bg-gray-700 text-white font-medium py-3 px-4 rounded-lg text-sm transition flex items-center justify-center gap-1">
+					<span data-i18n="btn_next">Suivant</span> ⏭️
+				</button>
             </div>
 
             <div class="w-full">
-                <button id="btn-exit-playlist" class="w-full bg-red-600 hover:bg-red-500 text-white font-medium py-2.5 px-4 rounded-lg text-sm transition flex items-center justify-center gap-1 shadow">⏹️ Quitter</button>
+                <button id="btn-exit-playlist" class="w-full bg-red-600 hover:bg-red-500 text-white font-medium py-2.5 px-4 rounded-lg text-sm transition flex items-center justify-center gap-1 shadow" >
+				⏹️ <span data-i18n="btn_exit">Quitter</span>
+				 </button>
             </div>
         </div>
     </div>
-<script src="app.js"></script>
-    
+    <script src="app.js"></script>
 </body>
 </html>

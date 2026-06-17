@@ -1,0 +1,113 @@
+{
+  "extension_name": {
+    "message": "Score & Setlist Manager"
+  },
+  "extension_description": {
+    "message": "Manage your scores and setlists easily directly from your browser."
+  },
+  "action_title": {
+    "message": "Open manager"
+  },
+  "app_title": {
+    "message": "Setlist & Scores"
+  },
+  "main_title": {
+    "message": "Score Manager"
+  },
+  "saved_playlists": {
+    "message": "Saved Playlists"
+  },
+  "folder_picker_instructions": {
+    "message": "Select your band's folder to load or update files."
+  },
+  "btn_select_folder": {
+    "message": "Select Band Folder"
+  },
+  "pdf_found_title": {
+    "message": "Scores Found"
+  },
+  "btn_select_all": {
+    "message": "Select All"
+  },
+  "btn_deselect_all": {
+    "message": "Deselect All"
+  },
+  "btn_next_step": {
+    "message": "Next (Organize) ->"
+  },
+  "search_placeholder": {
+    "message": "Search for a song or a folder..."
+  },
+  "organize_title": {
+    "message": "📋 Organize Setlist"
+  },
+  "btn_add_songs": {
+    "message": "Add Songs"
+  },
+  "organize_instructions": {
+    "message": "Drag and drop to rearrange. Use 🗑️ to remove a song."
+  },
+  "btn_back": {
+    "message": "<- Back"
+  },
+  "playlist_name_placeholder": {
+    "message": "Playlist name"
+  },
+  "btn_launch": {
+    "message": "🚀 Launch Playlist"
+  },
+  "sidebar_title": {
+    "message": "Setlist Index"
+  },
+  "btn_minimize": {
+    "message": "Hide"
+  },
+  "btn_index": {
+    "message": "Index"
+  },
+  "btn_prev": {
+    "message": "Previous"
+  },
+  "btn_next": {
+    "message": "Next"
+  },
+  "btn_exit": {
+    "message": "⏹️ Exit"
+  },
+  "title_remove": {
+    "message": "Remove"
+  },
+  "title_modify": {
+    "message": "Modify"
+  },
+  "title_delete": {
+    "message": "Delete"
+  },
+  "file_count_found": {
+    "message": "$COUNT$ PDF score(s) found.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "file_count_memory": {
+    "message": "$COUNT$ score(s) ready in memory.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alert_select_folder": {
+    "message": "Please select your band folder first to link the files."
+  },
+  "confirm_delete_playlist": {
+    "message": "Delete playlist \"$NAME$\" ?",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  }
+}

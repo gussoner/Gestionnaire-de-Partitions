@@ -1,14 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Gestionnaire de Partitions & Setlists",
+ "name": "__MSG_extension_name__",
   "version": "1.0",
-  "description": "Organisez vos partitions PDF et lancez vos setlists en plein écran.",
-"icons": {
+  "description": "__MSG_extension_description__",
+  "default_locale": "fr",
+  "icons": {
     "48": "icons/icon-48.png",
     "128": "icons/icon-128.png"
   },
   "action": {
-    "default_title": "Ouvrir le Gestionnaire de Partitions",
+    "default_title": "__MSG_action_title__",
     "default_icon": {
       "48": "icons/icon-48.png"
     }
@@ -24,7 +25,7 @@
       "id": "setlistmanager@musique.local",
       "data_collection_permissions": {
         "required": [
-          "policy"
+          "none"
         ]
       }
     }

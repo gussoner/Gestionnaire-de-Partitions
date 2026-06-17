@@ -1,0 +1,11 @@
+# Systèmes d'exploitation
+.DS_Store
+Thumbs.db
+
+# Fichiers de sauvegarde locaux (le ZIP que tu envoies aux stores)
+*.zip
+*.xpi
+
+# Éditeurs de code
+.vscode/
+.idea/

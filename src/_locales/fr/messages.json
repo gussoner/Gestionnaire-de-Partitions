@@ -1,0 +1,113 @@
+{
+  "extension_name": {
+    "message": "Gestionnaire de Partitions"
+  },
+  "extension_description": {
+    "message": "Gérez vos partitions et setlists facilement directement depuis votre navigateur."
+  },
+  "action_title": {
+    "message": "Ouvrir le gestionnaire"
+  },
+  "app_title": {
+    "message": "Setlist & Partitions"
+  },
+  "main_title": {
+    "message": "Gestionnaire de Partitions"
+  },
+  "saved_playlists": {
+    "message": "Playlists sauvegardées"
+  },
+  "folder_picker_instructions": {
+    "message": "Sélectionnez le dossier de votre groupe pour charger ou mettre à jour les fichiers."
+  },
+  "btn_select_folder": {
+    "message": "Sélectionner le dossier du groupe"
+  },
+  "pdf_found_title": {
+    "message": "Partitions trouvées"
+  },
+  "btn_select_all": {
+    "message": "Tout sélectionner"
+  },
+  "btn_deselect_all": {
+    "message": "Tout désélectionner"
+  },
+  "btn_next_step": {
+    "message": "Suivant (Organiser) ->"
+  },
+  "search_placeholder": {
+    "message": "Rechercher un morceau ou un dossier..."
+  },
+  "organize_title": {
+    "message": "📋 Organiser la Setlist"
+  },
+  "btn_add_songs": {
+    "message": "Ajouter des morceaux"
+  },
+  "organize_instructions": {
+    "message": "Glissez-déposez pour changer l'ordre. Utilisez 🗑️ pour retirer un morceau."
+  },
+  "btn_back": {
+    "message": "<- Retour"
+  },
+  "playlist_name_placeholder": {
+    "message": "Nom de la playlist"
+  },
+  "btn_launch": {
+    "message": "🚀 Lancer la Playlist"
+  },
+  "sidebar_title": {
+    "message": "Index de la Setlist"
+  },
+  "btn_minimize": {
+    "message": "Masquer"
+  },
+  "btn_index": {
+    "message": "Index"
+  },
+  "btn_prev": {
+    "message": "Précédent"
+  },
+  "btn_next": {
+    "message": "Suivant"
+  },
+  "btn_exit": {
+    "message": "⏹️ Quitter"
+  },
+  "title_remove": {
+    "message": "Retirer"
+  },
+  "title_modify": {
+    "message": "Modifier"
+  },
+  "title_delete": {
+    "message": "Supprimer"
+  },
+  "file_count_found": {
+    "message": "$COUNT$ partition(s) PDF trouvée(s).",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "file_count_memory": {
+    "message": "$COUNT$ partition(s) prêtes en mémoire.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alert_select_folder": {
+    "message": "Sélectionnez d'abord le dossier de votre groupe pour lier les fichiers."
+  },
+  "confirm_delete_playlist": {
+    "message": "Supprimer la playlist \"$NAME$\" ?",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  }
+}
