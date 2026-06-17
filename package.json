@@ -4,7 +4,8 @@
   "description": "Une extension universelle (Firefox / Chrome) conçue pour les musiciens afin d'organiser leurs partitions PDF et de les afficher en plein écran avec un menu vertical discret à droite.",
   "main": "build.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"build": "node build.js"
   },
   "repository": {
     "type": "git",
