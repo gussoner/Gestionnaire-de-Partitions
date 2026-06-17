@@ -1,0 +1,25 @@
+{
+  "name": "gestionnaire-de-partitions",
+  "version": "1.0.0",
+  "description": "Une extension universelle (Firefox / Chrome) conçue pour les musiciens afin d'organiser leurs partitions PDF et de les afficher en plein écran avec un menu vertical discret à droite.",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gussoner/Gestionnaire-de-Partitions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gussoner/Gestionnaire-de-Partitions/issues"
+  },
+  "homepage": "https://github.com/gussoner/Gestionnaire-de-Partitions#readme",
+  "devDependencies": {
+    "adm-zip": "^0.5.17",
+    "archiver": "^8.0.0"
+  }
+}

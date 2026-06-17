@@ -9,3 +9,6 @@ Thumbs.db
 # Éditeurs de code
 .vscode/
 .idea/
+
+# Fichiers node.JS
+node_modules/
